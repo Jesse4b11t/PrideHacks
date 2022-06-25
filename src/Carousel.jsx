@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import "./carousel.css";
 
+
 const Carousel = ({ images }) => {
   const carousel = useRef();
   const [count, setCount] = useState(0);
@@ -26,7 +27,7 @@ const Carousel = ({ images }) => {
   };
 
   return (
-    <div className="carousel-container">
+    <div className="carousel-container row-md-3">
       <div
         className="carousel-btn left-btn"
         onClick={() => incrementCarousel(-1)}
